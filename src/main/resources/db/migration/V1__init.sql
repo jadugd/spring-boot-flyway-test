@@ -1,8 +1,8 @@
 CREATE TABLE posts (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+  id bigint(20) NOT NULL,
   title varchar(100) NOT NULL,
   description varchar(250) NOT NULL,
-  content text DEFAULT NULL,
-  PRIMARY KEY (id),
-  UNIQUE KEY UK_title (title)
+  content varchar(50) DEFAULT NULL,
+  created_at datetime NOT NULL,
+  updated_at datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
